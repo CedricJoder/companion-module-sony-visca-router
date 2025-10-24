@@ -1,0 +1,34 @@
+{
+	"id": "sony-visca-router",
+	"name": "sony-visca-router",
+	"shortname": "visca-router",
+	"description": "Visca commands router for interfacing multiple interfaces, serial and/or IP",
+	"version": "1.0.0",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-generic-tcp-serial.git",
+	"bugs": "https://github.com/bitfocus/companion-module-generic-tcp-serial/issues",
+	"maintainers": [
+		{
+			"name": "Joder Cedric",
+			"email": "cedric.joder@gmail.com"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "0.0.0",
+		"entrypoint": "../src/index.js"
+	},
+	"manufacturer": "Sony",
+	"products": [
+		"Visca router"
+	],
+	"keywords": [
+		"IP",
+		"serial",
+		"RS232",
+		"RS422",
+		"Visca"
+	]
+}

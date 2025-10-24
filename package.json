@@ -1,0 +1,22 @@
+{
+	"name": "sony-visca-router",
+	"version": "1.0.0",
+	"main": "index.js",
+	"type": "module",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"dev": "yarn build:main --watch"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://CedricJoder/bitfocus/companion-module-visca-serial2ip.git"
+	},
+	"license": "MIT",
+	"dependencies": {
+		"@companion-module/base": "^1.8.0",
+		"serialport": "~10.5.0"
+	},
+	"devDependencies": {
+		"@companion-module/tools": "^1.5.0"
+	}
+}
