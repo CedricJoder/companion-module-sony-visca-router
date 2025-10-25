@@ -164,7 +164,7 @@ export class ViscaNetwork extends EventEmitter {
 				this.IPPort = routerModule.config['IPPort' + linkId]
 				break
 				
-			case 'TCP_Server':
+			case 'TCP_SERVER':
 				this.IPPort = routerModule.config['IPPort' + linkId]
 		}
 		
@@ -279,6 +279,9 @@ export class ViscaNetwork extends EventEmitter {
 		this.socket.on('data', (data) => {
 			let commands = self.parseCommands(data)
 			for (const command of commands) { 
+				if (!command.length && command.length == 0) {
+					return
+				}
 				let sourceId, destId, addressByte
 				self.log('debug', 'Incoming message : ' + this.msgToString(command), false)
 				if (this.viscaProtocol == 'SERIAL') {
